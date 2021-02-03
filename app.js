@@ -99,6 +99,17 @@ function renderAllStudents(){
         var courseData = document.createElement('td');
         courseData.textContent = studentsArray[i].course;
         dataRow.appendChild(courseData);
+        var passData = document.createElement('td');
+    
+        if (studentsArray[i].grade< 50){
+        passData.textContent = 'Fail';
+        dataRow.appendChild(passData);
+
+        }else{
+        passData.textContent = 'Pass';
+        dataRow.appendChild(passData);
+
+    }
 
         table.appendChild(dataRow);
     }
