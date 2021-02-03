@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(school.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: inline-block;
+}
+
+form{
+    position: relative;
+    top: 35px;
+    background-color: rgba(72, 126, 149, 0.5);
+    height: 200px;
+    width: 320px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+label, input{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#first-label{
+    top: 15px;
+}
+
+#second-label{
+    top: 65px;
+    left: 133px;
+}
+
+#studentName{
+    top: 35px;
+    left: 77px;
+}
+
+label{
+    text-align: center;
+    left: 120px;
+}
+
+select{
+    position: absolute;
+    top: 85px;
+    left: 77px;
+}
+
+#btnSubmit{
+    position:absolute;
+    top: 125px;
+    left:100px;
+    background-color: black;
+    color: white;
+    width: 125px;
+    height: 30px;
+    text-align: center;
+}
+
+#table-div{
+    margin-left: 460px;
+    margin-top: -197px;
+    background-color: rgba(72, 126, 149, 0.5);
+    width: 725px;
+    height: 300px;
+}
+
+table{
+    position: absolute;
+    top: 200px;
+    margin-left: 175px;
+    border-collapse: collapse;
+    width: 400px;
+    border: 2px solid white;
+}
+
+table, th, tr, td{
+  
+     border: 2px solid white; 
+    /* border-collapse: collapse; */
+    text-align: center;
+    background-color: rgb(105,105,105);
+    color: white;
+
+}
+
+th{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* border-collapse: collapse; */
+
+}
+
+#course{
+    width: 166px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+#clearBtn{
+    margin-top: 25px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin-left: 800px;
+}
