@@ -97,6 +97,7 @@ function clear(event){
     event.preventDefault();
     table.innerHTML= '';
     renderTableHeader();
+    localStorage.clear();
     
 }
 
