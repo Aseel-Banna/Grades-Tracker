@@ -1,12 +1,11 @@
 'use strict';
 
 var studentsArray = [];
-var tableHeader = ['Student Name', 'Student Grade', 'Course'];
+var tableHeader = ['Student Name', 'Student Grade', 'Course', 'Pass/Fail'];
 
 var studentForm = document.getElementById('students-form');
 var table = document.getElementById('gradesTable');
 studentForm.addEventListener('submit', handleListener);
-
 
 var clearButton = document.getElementById('clearBtn');
 
@@ -21,7 +20,7 @@ function Student(name, course){
 }
 
 Student.prototype.renderStudent = function(){
-    var dataRow = document.createElement('tr');
+   var dataRow = document.createElement('tr');
 
     var nameData = document.createElement('td');
     nameData.textContent = this.name;
@@ -35,10 +34,22 @@ Student.prototype.renderStudent = function(){
     courseData.textContent = this.course;
     dataRow.appendChild(courseData);
 
+
+    var passData = document.createElement('td');
+    
+    if (this.grade< 50){
+        passData.textContent = 'Fail';
+        dataRow.appendChild(passData);
+
+    }else{
+        passData.textContent = 'Pass';
+        dataRow.appendChild(passData);
+
+    }
+
     table.appendChild(dataRow);
     
 }
-
 
 
 function generateRandomGrade(){
